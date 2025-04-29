@@ -16,7 +16,6 @@ import er.sujal.sharma.URL_Shortener.exception.URLShortenerException;
 import er.sujal.sharma.URL_Shortener.service.URLShortenerService;
 
 @RestController
-//@RequestMapping(value = "/")
 public class UrlShortenerController {
 	@Autowired
 	private URLShortenerService urlShortenerService;
@@ -27,7 +26,6 @@ public class UrlShortenerController {
     }
 
     @GetMapping("/{shortURL}")
-    
     public ResponseEntity<Void> fetchLongURL(@PathVariable String shortURL) throws URLShortenerException {
         String longURL = urlShortenerService.fetchLongUrl(shortURL);
         HttpHeaders headers = new HttpHeaders();

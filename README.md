@@ -1,0 +1,2 @@
+# URLShortener
+A lightweight and efficient web application that converts long URLs into compact, shareable links. Built using Java Spring Boot, this system supports custom aliases, expiration dates, and redirection tracking. Implements RESTful APIs with JWT-based authentication for secure access and role-based operations. Integrated with a relational database to persist mappings and usage statistics. Designed with scalability in mind, achieving optimized performance with minimal latency.
